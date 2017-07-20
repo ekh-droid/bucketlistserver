@@ -7,7 +7,7 @@ var mongoose = require("mongoose");
 var cors = require("cors");
 
 // DB connection
-mongoose.connect("mongodb://localhost:bucket/bucket");
+mongoose.connect("mongodb://<SuperAdmin>:<admin>@ds019866.mlab.com:19866/bucketlist");
 
 // CORS - middleware on the express side
 app.use(cors());
