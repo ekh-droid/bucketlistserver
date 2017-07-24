@@ -15,9 +15,9 @@ module.exports = function(app) {
 		// res.send({hi: "there"});
 	});
 
-	app.post("/signup", Auth.signup);
+	app.post("api/signup", Auth.signup);
 
-	app.post("/signin", requireSignin, Auth.signin);
+	app.post("api/signin", requireSignin, Auth.signin);
 
 	app.post("/newitem", requireAuth, BucketList.addBucketList);
 
